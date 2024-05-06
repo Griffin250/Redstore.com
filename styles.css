@@ -115,7 +115,7 @@
   }
   
   .col-4 {
-    flex-basis: 25%;
+    flex-basis: 20%;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
@@ -166,7 +166,7 @@
     transform: translateY(-5px);
   }
   
-  /* Offer */
+  /*................................................... Offer......................................................... */
   
   .offer {
     background: radial-gradient(#fff, #ffd6d6);
@@ -206,7 +206,7 @@
 
 
   /*.........................................Footer.................................................................*/
-  /* footer */
+  /* ...............................................footer............................................... */
   
   .footer {
     background: #000;
@@ -280,7 +280,7 @@
     display: none;
   }
   
-  /* media query for menu */
+  /* ..............................................media query for menu ..................................................*/
   
   @media only screen and (max-width: 800px) {
     nav ul {
@@ -308,7 +308,7 @@
     }
   }
   
-  /* all products page */
+  /* ..............................................all products page................................... */
   
   .row-2 {
     justify-content: space-between;
@@ -566,4 +566,50 @@
     .cart-info p {
       display: none;
     }
+  }
+
+
+
+
+
+  /*----------------------------------------------------------Logo slides---------------------------------------------*/
+  .logos{
+    padding:20px 20px;
+    overflow-x:hidden;
+    white-space: nowrap;
+    box-shadow: 1px 1px 4px rgb(220, 218, 218);
+  }
+  .logos .logo-slide{
+  display: inline-block;
+    animation: 25s slide infinite linear;
+   
+  }
+  .logos .logo-slide img{
+    width: 12vw;
+    cursor: pointer;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    margin: 12px 10px;
+    padding:20px 20px;
+    
+  }
+
+  .logos .logo-slide .HM-logo{
+    width: 10vw;
+      }
+  .logos .logo-slide .Amazon-logo{
+width: 16vw;
+  }
+
+  @keyframes slide{
+    from{
+transform:translateX(0%);
+    }
+    to{
+transform:translateX(-100%);
+    }
+  }
+  .logos:hover .logo-slide{
+    animation-play-state: paused;
   }
